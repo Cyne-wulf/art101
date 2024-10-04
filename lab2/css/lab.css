@@ -4,6 +4,71 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    border: solid 1px #ff7b7b;
+    background-color: #ffcdcd;
   }
+
+
+  /* we can use a single css file to style all the files in our wwebsite */
+
+/* you can pick your own background colors, text colors, and fonts */
+
+/* we can select an html element tag, in this case "body" will apply to the whole document */
+body {
+  background-color: rgba(255, 212, 212, 0.915);
+  background-image: url("/lab2/img/R.jpg");
+  background-size: cover;
+
+  font-family: monospace;
+}
+
+.intro {
+  margin: 10px;
+  padding: 30px;
+  font-family: fantasy;
+  color: rgba(254, 210, 210, 0.915);
+  background-color: rgba(31, 29, 29, 0.304);
+}
+
+.link-class {
+  font-family: fantasy;
+  color: rgb(55, 138, 240);
+  background-color: rgba(0, 0, 0, 0.422);
+  margin: 20px 0;
+  margin-left: 85%;
+}
+
+/* we can have rules apply to multiple elements at the same time with commas */
+h1 {
+  font-family: fantasy;
+  color: white;
+}
+
+h2,
+h3 {
+  font-family: fantasy;
+  color: rgb(165, 24, 24);
+}
+
+/* and we can have rules that overlap other rules, both take effect */
+h1 {
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  font-size: 250%;
+}
+
+/* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
+#content {
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px #88888800;
+  background-color: #ffafd37e;
+}
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+/* .minor-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #88888800;
+  background-color: #ffb0b0;
+} */
