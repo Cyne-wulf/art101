@@ -16,7 +16,7 @@
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
   background-color: rgba(255, 212, 212, 0.915);
-  background-image: url("/lab2/img/R.jpg");
+  background-image: url("../img/R.jpg");
   background-size: cover;
 
   font-family: monospace;
