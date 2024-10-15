@@ -104,23 +104,23 @@
   
   @media screen and (max-width: 600px) {
     body {
-        padding: 1em;
+      padding: 1em;
     }
   
     main {
-        padding: 1em;
+      padding: 1em;
     }
   
     h1 {
-        font-size: 2em;
+      font-size: 2em;
     }
   
     h2 {
-        font-size: 1.5em;
+      font-size: 1.5em;
     }
   
     nav li {
-        display: block;
-        margin: 1em 0;
+      display: block;
+      margin: 1em 0;
     }
   } 
