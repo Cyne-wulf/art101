@@ -9,8 +9,9 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-image: url(https://i.pinimg.com/originals/84/c0/af/84c0af66a9ef7fad8a96ccd1dc71605c.jpg); /* Background image for Sayaka's theme */
-  background-size: cover;
+  background-image: url(https://i.pinimg.com/originals/84/c0/af/84c0af66a9ef7fad8a96ccd1dc71605c.jpg); /*Background image for Sayaka's theme */
+  background-size:cover;
+  /* background-size:auto; */
   display: flex;
   justify-content: center;
 }
@@ -33,7 +34,7 @@ section {
 
 h1 {
   color: #013a63; 
-  font-size: 2.5em;
+  font-size: 2em;
   text-align: center;
   margin-bottom: 1em;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
