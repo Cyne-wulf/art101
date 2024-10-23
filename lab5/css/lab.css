@@ -18,7 +18,7 @@ body {
 
 /* Main content area styling */
 main#content {
-  background: rgba(255, 177, 194, 0.823); /* Slightly transparent white background */
+  background: rgba(255, 177, 194, 0.923); /* Slightly transparent white background */
   border: 2px solid #ffffff2b; /* Blue border to represent Sayaka's theme */
   border-radius: 15px;
   max-width: 900px;
