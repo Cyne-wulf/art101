@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-image: url(https://i.pinimg.com/originals/01/bf/38/01bf386ca5e36277b7f072b669be192a.jpg); /*Background image for Sayaka's theme */
+  background-image: url(https://static.zerochan.net/Sakura.Kyouko.full.519047.jpg); /*Background image for Sayaka's theme */
   background-size:cover;
   /* background-size:auto; */
   display: flex;
@@ -33,7 +33,7 @@ section {
 }
 
 h1 {
-  color: #ffc02e; 
+  color: #d12d69; 
   font-size: 2.5em;
   text-align: center;
   margin-bottom: 1em;
@@ -48,7 +48,7 @@ h2 {
   font-size: 1.75em;
 }
 h3 {
-  color: #960000; 
+  color: #660096; 
   border-bottom: 2px solid #c9aa66;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
@@ -58,7 +58,7 @@ h3 {
 /* Styling for the minor sections */
 .minor-section {
   background: rgba(51, 8, 8, 0.625); /* Light sky blue with slight transparency */
-  border: 1px solid #add7ff;
+  border: 3px solid #04131c;
   border-radius: 10px;
   padding: 1rem;
   margin-top: 1em;
@@ -118,7 +118,7 @@ img {
   margin: 1em auto;
   /* border: 3px solid #8c737d; */
   border-radius: 15px;
-  width:500px
+  width:850px
 }
 
 /* Responsive styling */
