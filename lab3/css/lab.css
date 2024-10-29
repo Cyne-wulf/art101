@@ -39,6 +39,14 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+/* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
+#content {
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px #7656b128;
+  background-color: #aa87ea6b;
+}
+
 h1 {
   color: #e0e6ff;
   font-size: 2.5em;
@@ -64,7 +72,7 @@ h2 {
 }
 
 a {
-  color: #742de7;
+  color: #b588ff;
   text-decoration: none;
   font-weight: bold;
 }
@@ -92,7 +100,7 @@ nav li {
 img {
   display: block;
   margin: 1em auto;
-  border: 3px solid #6a1b9a;
+  border: 3px solid #691b9a3d;
   border-radius: 15px;
 }
 

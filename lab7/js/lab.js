@@ -1,19 +1,24 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - This is the logic file for lab 7
+// Author: Ashan Devine
+// Date: 10/27/2024
 
 // Constants
 
 // Functions
 
 // this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
+function getSortedName(person) {
   // some code here
+  let sortedName = person.split("").sort().join("");  //Take the name and split, sort, and join into a string
+  
   // return results;
+  return sortedName;
 }
 
 function main() {
   console.log("Main function started.");
+  let person = prompt("Please enter your name"); //Launch a prompt for the user to enter their name
+  document.writeln("Your sorted name is: " + getSortedName(person)); //Print string + result of function with name passed as an arg
   // the code that makes everything happen
 }
 
