@@ -1,9 +1,127 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
+body {
+  background: linear-gradient(135deg, #ffb54d, #ffdc3f); 
+  color: #3c2f2f; 
+  font-family: 'Georgia', serif; 
+  padding: 0;
+  line-height: 1.6;
+  background-image: url(https://wallpaper-a-day.com/wp-content/uploads/2022/05/wallpaper68.png?w=2048); 
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+main#content {
+  background: rgba(45, 8, 33, 0.659); 
+  border: 2px solid #ea587f; 
+  border-radius: 15px;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+}
+
+/* Section margins */
+section {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: #ffd0e3; 
+  font-size: 1.75em;
+  text-align: center;
+  margin-bottom: 1em;
+  text-shadow: 3px 3px 5px rgba(255, 196, 239, 0.3);
+}
+
+h2 {
+  color: #ffd0e3; 
+  border-bottom: 2px solid #5a1f3c;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.75em;
+}
+
+h3 {
+  color: #b5004e; 
+  border-bottom: 2px solid #8a284f;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5em;
+}
+
+
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+  background: rgba(14, 9, 11, 0); 
+  border: 1px solid #ea587f; 
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1em;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+p {
+  line-height: 1.6;
+  color: #ffacd0; 
+}
+
+#output {
+  background: #ffd8efc2;
+  border: 2px solid #b34d79;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+}
+#output p {
+  color: rgb(128, 11, 11) !important;
+}
+
+
+
+#result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav#links {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+nav#links a {
+  color: #e03373; 
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 1rem;
+}
+
+nav#links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
+img {
+  display: block;
+  margin: 1em auto;
+  border: 3px solid #e3177a; 
+  border-radius: 15px;
+  width: 400px;
+  height: auto;
+}
+@media (max-width: 600px) {
+  main#content {
+      padding: 1rem;
   }
+  h1 {
+      font-size: 2em;
+  }
+  h2 {
+      font-size: 1.5em;
+  }
+  nav#links a {
+      display: block;
+      margin: 0.5rem 0;
+  }
+}
+
