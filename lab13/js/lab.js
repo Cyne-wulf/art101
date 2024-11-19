@@ -6,51 +6,51 @@
 
 // Functions
 
-function fizzBuzzBoom() 
+function fizzBuzzBoom() //FizzBuzzBoom function, does the weird counting output thing 
 {
-  let oneLongString = "";
+  let oneLongString = ""; //Initialize string to append to
 
-  for (let num = 0; num <= 200; num++) 
+  for (let num = 0; num <= 200; num++) //Loop parameters, arbitrary
   {
-    let str = "";
+    let str = ""; //Instance string to hold values for this iteration
     
-    if (num == 0) 
+    if (num == 0) //Case == 0
     {
       // str += "FizzBuzzBoomBang!";
     }
   
 
-    if (num % 3 === 0) 
+    if (num % 3 === 0)  //Case mod 3
     {
-      str += "Fizz";
+      str += "Fizz";  //Append keyword
     }
 
-    if (num % 5 === 0) 
+    if (num % 5 === 0)  //Case mod 5
     {
-      str += "Buzz";
+      str += "Buzz";  //Append keyword
     }
 
-    if (num % 7 === 0) 
+    if (num % 7 === 0)  //Case mod 7 
     {
-      str += "Boom";
+      str += "Boom";  //Append keyword
     }
 
-    if (num % 9 === 0) 
+    if (num % 9 === 0) //Case mod 9
     {
-      str += "Bang";
+      str += "Bang";  //Append keyword
     }
 
-    if (str === "") 
+    if (str === "") //Base case
     {
-      oneLongString += num + "<br>";
+      oneLongString += num + "<br>";  //Print number and nothing else on that line
     }
     else
     {
-      oneLongString += num + " - " + str + "!<br>";
+      oneLongString += num + " - " + str + "!<br>"; //Print number and the weird string that we made
     }
   }
 
-  $("#output").html(oneLongString);
+  $("#output").html(oneLongString); //Write the result to the output div
 }
 
 // Call the function to execute it
