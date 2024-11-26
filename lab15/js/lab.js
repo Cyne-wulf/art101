@@ -4,6 +4,8 @@
 
 // Constants
 const API_URL = "https://api.chucknorris.io/jokes/random";
+const NASA_APOD_API = "https://api.nasa.gov/planetary/apod";
+const NASA_API_KEY = "";
 
 // Functions
 
@@ -32,6 +34,35 @@ function fetchJoke() {
 }
 
 
+function fetchNasaPicture() {
+  console.log("Fetching NASA Picture of the Day...");
+
+  $.ajax({
+      url: NASA_APOD_API,
+      type: "GET",
+      data: {
+          api_key: NASA_API_KEY
+      },
+      dataType: "json",
+      success: function (data) {
+          console.log("NASA API call successful:", data);
+
+          // Display the picture and explanation
+          const htmlContent = `
+              <h3>${data.title}</h3>
+              <img src="${data.url}" alt="NASA Picture of the Day" style="max-width: 100%; height: auto;">
+              <p>${data.explanation}</p>
+          `;
+          $("#nasa-output").html(htmlContent);
+      },
+      error: function (jqXHR, textStatus, errorThrown) {
+          console.log("NASA API call failed:", textStatus, errorThrown);
+          $("#nasa-output").html("<p>Failed to fetch NASA's Picture of the Day.</p>");
+      }
+  });
+}
+
+
 //Main function to set up event listeners.
 function main() {
   console.log("Main function started.");
@@ -39,6 +70,10 @@ function main() {
   // Set up the click event for the button
   $("#activate").click(function () {
       fetchJoke();
+  });
+
+  $("#activate-nasa").click(function () {
+      fetchNasaPicture();
   });
 }
 
