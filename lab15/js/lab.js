@@ -5,7 +5,7 @@
 // Constants
 const API_URL = "https://api.chucknorris.io/jokes/random";
 const NASA_APOD_API = "https://api.nasa.gov/planetary/apod";
-const NASA_API_KEY = "";
+const NASA_API_KEY = ""; //removed for security
 
 // Functions
 
